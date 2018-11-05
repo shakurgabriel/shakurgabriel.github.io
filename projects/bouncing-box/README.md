@@ -128,7 +128,7 @@ This requires 2 things:
     
 2) Call on the function 20 times/second: This is also already done for us! At the bottom of the program you will find the code `setInterval(update, 50);`. This special function instructs our `update` function to run every `50` milliseconds, which is 20 times per second! Each time the function is called the `position` variable will change and will be printed to the console.
 
-**Run the program and open up the console in the new chrome tab. See how the position changes?**
+**Run the program and open up the console in the new chrome tab (right click and choose inspect, then select the "console" tab). See how the value of position changes?**
 
 **QUESTION 1: If this code happens every 50 milliseconds, what will the value of position be after 200 milliseconds?** 
 
