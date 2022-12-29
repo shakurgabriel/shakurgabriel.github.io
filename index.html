@@ -66,33 +66,27 @@
     </head>
     
     <body>
-        <div id="all-contents">
-            <nav>
-                <header>Website</header>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
-        
-            <main>
-                <div class="sidebar">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxp60JXXAxjk-7f3PVuUsaBreimJNrwO4OGYIN3WZzqK5Oh4_spy2NIsI:https://vignette.wikia.nocookie.net/naruto/images/2/2e/Omoi_mugshot.png/revision/latest%3Fcb%3D20161007232256">
-                </div>
-    
-                <div class="content">
-                    <header> shakur gabriel</header>
-                    <p> student at south plaquemines</p>
-                    <section class="interests">
-                        <header>Interests</header>
-                        <ul>
-                            <li>video games</li>
-                            <li>anime</li>
-                            <li>food</li>
-                        </ul>
-                    </section>
-                </div>
-            </main>
-         </div>
+<div id="all-contents">
+    <nav>
+        <header></header>
+        <ul>
+            <li><a href="index.html">Contact Me</a></li>
+            <li><a href="https://www.linkedin.com/in/shakur-gabriel-89853522b/?original_referer=">Linkedin</a></li>
+	<li><a href="https://github.com/shakurgabriel/shakurgabriel.github.io">Github</a></li>	
+        </ul>
+    </nav>
+<main>
+    <div class="content">
+        <h1>About me</h1>
+	<p>Hello there my name is Shakur Gabriel I'm a software engineer</p>
+	<h2>Portfolio</h2>
+        <ul id="portfolio">
+        </ul>
+    </div>
+</main>
+
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
     </body>
 </html>
