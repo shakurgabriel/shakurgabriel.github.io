@@ -1,6 +1,10 @@
 html, body {
   height: 100%;
   width: 100%;
+  background: rgb(125, 198, 205);
+  color: rgb(45, 45, 45);
+  padding: 10px;
+  font-family: arial;
 }
 form {
   max-width: 550px;
