@@ -9,7 +9,7 @@ html, body {
 form {
   max-width: 550px;
   width: 90%;
-  background: rgb(245, 238, 219);
+  background: white;
   margin: 17vh auto 0 auto;
   padding: 40px;
   border-radius: 3px;
